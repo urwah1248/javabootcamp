@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Javascript Assignment</title>
+</head>
+<body>
+    
+    <script>
+        //1. Write a program to print a array of five names in reverses order.
+        let nums=[1,2,3,4,5]
+        for(let i=4;i>=0;i--){
+            console.log(nums[i]);
+        }
+
+        //2. Create a array of country objects having name capital and population as properties.
+        //Print the countries whose population is less than 2000
+
+        let     countries=[
+                    pakistan={
+                        capital:"Islamabad",
+                        population:"1500"
+                    },
+                    india={
+                        capital:"New Dehli",
+                        population:"3000"
+                    },
+                    china={
+                        capital:"beijing",
+                        population:"1900"
+                    }
+                ];
+        for(let n=0;n<=2;n++){
+            if(countries[n].population<2000){
+                console.log(countries[n]);
+            }   
+        }
+
+    </script>
+</body>
+</html>
