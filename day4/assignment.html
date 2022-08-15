@@ -1,0 +1,53 @@
+<!-- Create a page having 4 buttons and the following functions
+
+Button 1 to change color of div
+Button 2 to change size of div
+Button 3 to add a image in div
+Button 4 to remove a image from div -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 4 Assignment</title>
+
+    <style>
+        img{
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+
+    <div style="width: 500px; Height:500px; background-color: aqua;">
+
+    </div>
+
+    <button class="color" onclick="color()">Change Color</button>
+    <button class="size" onclick="size()">Change size</button>
+    <button class="add" onclick="add()">Add Image</button>
+    <button class="remove" onclick="remove()">Remove Image</button>
+
+    <script>
+        function color(){
+            document.querySelector("div").style.backgroundColor="green";
+        }
+
+        function size(){
+            document.querySelector("div").style.height="300px";
+            document.querySelector("div").style.width="300px";
+        }
+
+        function add(){
+            document.querySelector("div").innerHTML="<img src=https://img.freepik.com/free-vector/graphic-design-colorful-geometrical-lettering_52683-34588.jpg?w=2000>"
+        }
+
+        function remove(){
+            document.querySelector("div").innerHTML="";
+        }
+    </script>
+
+</body>
+</html>

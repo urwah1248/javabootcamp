@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Urwah</h1>
+    <h1 class="class">Urwah_name</h1>
+    <h1 id="id">Urwah_ID</h1>
+
+
+    <script>
+
+        // QuerySelector and QuerySelectorALL
+        // QuerySelector can be used to select an HTML element by its Tagname, Class or ID.
+    
+        console.log(document.querySelector("h1")); // querySelector for tag
+        console.log(document.querySelectorAll("h1")); // querySelectorAll for Tag
+
+        console.log(document.querySelector(".class")); // querySelector for class
+        console.log(document.querySelectorAll(".class")); // querySelectorAll for Class
+
+        console.log(document.querySelector("#id")); // querySelector for ID
+        console.log(document.querySelectorAll("#id")); // No point in using it as there can be no elements
+        // with the same ID.
+        
+        //innerText
+        // We can use innerText to select the inner text of an element
+
+        console.log(document.querySelector("#id").innerText); // innerText used on queryselector
+
+        //changing innerText of an element
+
+        document.querySelector("#id").innerText="Changed Text";
+        console.log(document.querySelector("#id").innerText); //printing updated Text
+
+        // Event Handling
+        // Event Handling is the Interaction with the Website
+
+    </script>
+</body>
+</html>
