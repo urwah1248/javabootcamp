@@ -1,0 +1,47 @@
+#displayedimg{
+    margin: 2% 0;
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+}
+
+#displayedimg{
+    transition: 200ms ease-in-out;
+    transition-delay: 200ms;
+}
+
+.container{
+    align-items: center;
+}
+
+
+#next, #previous{
+    font-family: Impact,'Arial Narrow Bold';
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 50px;
+    text-align: center;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 50%);
+    position: relative;
+    top: 50%;
+    margin: 0 1%;
+    user-select:none;
+}
+#next:hover, #previous:hover{
+    background-color: rgba(255, 255, 255, 80%);
+    cursor: pointer;
+    transition: 250ms;
+}
+#next:not(:hover), #previous:not(:hover){
+    background-color: rgba(255, 255, 255, 50%);
+    transition: 250ms;
+}   
+#previous{
+    float: left;
+}
+#next{
+    float: right;
+}
